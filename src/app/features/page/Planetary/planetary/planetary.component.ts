@@ -8,7 +8,12 @@ import { PlanetaryService } from 'src/app/Services/Planetary/planetary.service';
   styleUrls: ['./planetary.component.scss'],
 })
 export class PlanetaryComponent implements OnInit {
-  planetary!: Planetary[];
+  planetary: Planetary = {
+    explanation: '',
+    title: '',
+    url: '',
+    date: '',
+  };
 
   constructor(private planetaryService: PlanetaryService) {}
 
@@ -17,7 +22,7 @@ export class PlanetaryComponent implements OnInit {
   }
 
   getplanetary() {
-    this.planetaryService.list().subscribe(({ data }: any) => {
+    this.planetaryService.list().subscribe((data: Planetary) => {
       this.planetary = data;
     });
   }
