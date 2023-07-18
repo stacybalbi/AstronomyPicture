@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PlanetaryComponent } from './planetary/planetary.component';
 
 const routes: Routes = [
-  { path: 'planetary-list', component: PlanetaryComponent },
+  { path: 'planetary', component: PlanetaryComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 

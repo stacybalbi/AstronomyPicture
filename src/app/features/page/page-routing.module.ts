@@ -6,7 +6,7 @@ import { PlanetaryComponent } from './Planetary/planetary/planetary.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   {
-    path: 'planetary',
+    path: 'planetary-page',
     loadChildren: () =>
       import('./Planetary/planetary.module').then((m) => m.PlanetaryModule)
   },
