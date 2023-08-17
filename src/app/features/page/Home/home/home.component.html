@@ -1,45 +1,23 @@
 
-<section class="inicio">
-    <div class="container">
-    <br><br>
-    <h1>Welcome to "Astronomy World"</h1>
-<br><br>
-    <button routerLink="/planetary" class="btn" type="button">
-        <strong>Picture of the day</strong>
-        <div id="container-stars">
-          <div id="stars"></div>
-        </div>
-      
-        <div id="glow">
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </button>
-<br><br>
-      <button routerLink="/planetary-list" class="btn" type="button">
-        <strong>Picture of the day</strong>
-        <div id="container-stars">
-          <div id="stars"></div>
-        </div>
-      
-        <div id="glow">
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </button>
-<br><br>
-      <button routerLink="/planetary-list" class="btn" type="button">
-        <strong>Picture of the day</strong>
-        <div id="container-stars">
-          <div id="stars"></div>
-        </div>
-      
-        <div id="glow">
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </button>
+<!-- <div class="card">
+    <p>{{planetary.title}}</p>
+    <p>{{planetary.explanation}}</p>
+    <img src="{{planetary.url}}" alt="">
+</div> -->
+
+<section class="inico-p">
+  <div>
+      <br><br>
 
 
-</div>
+      <div class="card center_absolute text-center">
+
+        <div class="text">Astronomy Picture of the Day</div>
+
+          <div class="welcome"> {{planetary.title}} </div> <br>
+          <div class="card-img"> <img src="{{planetary.url}}" alt=""></div>
+          <div class="text"> {{planetary.explanation}}</div>
+      </div>
+  </div>
 </section>
+

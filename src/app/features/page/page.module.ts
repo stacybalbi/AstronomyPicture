@@ -5,9 +5,7 @@ import { PageRoutingModule } from './page-routing.module';
 import { HomeComponent } from './Home/home/home.component';
 
 @NgModule({
-  declarations: [
-    HomeComponent
-  ],
+  declarations: [],
   imports: [CommonModule, PageRoutingModule],
 })
 export class PageModule {}
